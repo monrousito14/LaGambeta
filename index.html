@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaGambeta | Camisetas de fútbol</title>
+<meta name="description" content="Camisetas de fútbol de ligas del mundo y selecciones nacionales. Arma Mi clóset y consulta disponibilidad por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<!-- ▼▼ LOGO EN LA PESTAÑA: cambia aquí la ruta de tu logo (ícono junto al título de la página) ▼▼ -->
+<link rel="icon" href="assets/Logo LaGambeta.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="bar wrap">
+    <a class="logo" href="#catalogo" aria-label="LaGambeta, ir al inicio">
+      <!-- ▼▼ LOGO DEL ENCABEZADO: cambia aquí la ruta de tu logo (si no existe, se muestra la pelota de abajo) ▼▼ -->
+      <img src="assets/Logo LaGambeta.png" alt="" width="40" height="40" data-fb="1" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+      <span>LaGambeta</span>
+    </a>
+    <form class="search" role="search" id="searchForm">
+      <label class="sr" for="q">Buscar camisetas</label>
+      <input id="q" type="search" placeholder="Buscar equipo, selección o temporada" autocomplete="off">
+    </form>
+    <button class="closet-btn" id="closetBtn" type="button" aria-haspopup="dialog">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l3 2 3-2 5 3-2 4-2-1v10H8V10l-2 1-2-4z"/></svg>
+      <span>Mi clóset</span>
+      <span class="count" id="count" aria-label="0 unidades">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <strong>LaGambeta</strong>
+    <p>Los precios y productos mostrados son de demostración. Abrir WhatsApp solo prepara la consulta: no confirma disponibilidad, compra ni envío.</p>
+  </div>
+</footer>
+
+<div id="overlay" hidden></div>
+<aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden></aside>
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
